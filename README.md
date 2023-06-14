@@ -13,5 +13,6 @@ The user with the highest score wins.
 
 
 
-https://github.com/shacharml/WarGame/assets/68264925/49002f71-6b8d-4633-8bb0-206fa0264650
+https://github.com/shacharml/WarGame/assets/68264925/854038a8-1750-47a0-bbee-a1e7feec9751
+
 
