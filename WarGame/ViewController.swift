@@ -22,6 +22,8 @@ class ViewController: UIViewController ,CLLocationManagerDelegate{
     
     @IBOutlet weak var userName: UILabel!
     
+    var isLocation = false
+    
     var locationManager : CLLocationManager!
     
     override func viewDidLoad() {
@@ -29,10 +31,12 @@ class ViewController: UIViewController ,CLLocationManagerDelegate{
         // init location
         locationManager = CLLocationManager()
         getCurrentLocation()
+        //handel text fild
+        //enterName.becomeFirstResponder()
+        enterName.delegate = self
     }
     
     func getCurrentLocation(){
-        
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestAlwaysAuthorization()
@@ -46,7 +50,9 @@ class ViewController: UIViewController ,CLLocationManagerDelegate{
             //get Current Location
             let userLocation = locations[0] as CLLocation
             //get longutide
-            let currentLog = userLocation.coordinate.longitude
+         let currentLog = userLocation.coordinate.longitude
+            isLocation = true
+        
              
             groupDecide(curLog: currentLog)
         }
@@ -66,18 +72,50 @@ class ViewController: UIViewController ,CLLocationManagerDelegate{
     }
     
     @IBAction func play(_ sender:UIButton){
-        if (self.enterName.text != nil){
-            print("is nill")
+        enterName.resignFirstResponder()
+        if isLocation {
+            if let textName = self.enterName.text {
+                
+                if textName == "" {
+                    print("is nil")
+                    
+                    return
+                }
+                 
+                else {
+                    //have the location and the name can go to the game screen
+                    print("\(textName)")
+                    
+                    let nextScreen = storyboard?.instantiateViewController(identifier: "game") as! GameViewController
+                    nextScreen.modalPresentationStyle = .fullScreen
+                    present( nextScreen, animated: true)
+                    
+                    
+                }
+            }
+            else{
+                //nees to save the name and the side and pass it to the next screen
+                print("is nil")
+                //maybe show an error massage
+                return
+            }
+        } else{
+            print("\(isLocation)")
+            return
         }
-        else{
-            //nees to save the name and the side and pass it to the next screen
-            print("\(enterName.text)")
-        }
-            
     }
         
 }
     
-    
+// handle the Done button clicked on the keyboard
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+       /* if let text = textField.text{
+            print("\(text)")
+        }*/
+        return true
+    }
+}
     
 
