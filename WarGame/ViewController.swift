@@ -23,7 +23,7 @@ class ViewController: UIViewController ,CLLocationManagerDelegate{
     @IBOutlet weak var userName: UILabel!
     
     var isLocation = false
-    
+    var isRight : Bool?
     var locationManager : CLLocationManager!
     
     override func viewDidLoad() {
@@ -58,7 +58,7 @@ class ViewController: UIViewController ,CLLocationManagerDelegate{
         }
     
     func groupDecide(curLog: Double){
-        var isRight : Bool?
+        
         print("curLog: \(curLog)")
         if curLog > LOG{
             rightImage.isHidden = false
@@ -78,7 +78,6 @@ class ViewController: UIViewController ,CLLocationManagerDelegate{
                 
                 if textName == "" {
                     print("is nil")
-                    
                     return
                 }
                  
@@ -88,7 +87,9 @@ class ViewController: UIViewController ,CLLocationManagerDelegate{
                     
                     let nextScreen = storyboard?.instantiateViewController(identifier: "game") as! GameViewController
                     nextScreen.modalPresentationStyle = .fullScreen
-                    present( nextScreen, animated: true)
+                    nextScreen.name = textName
+                    nextScreen.isRight = self.isRight
+                    present( nextScreen, animated: true , completion: nil)
                     
                     
                 }
