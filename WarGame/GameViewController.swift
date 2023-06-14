@@ -11,6 +11,9 @@ class GameViewController: UIViewController {
 
     var name: String?
     var isRight: Bool??
+    var sRight:Int = 0
+    var sLeft:Int = 0
+    let cardsImages = ["card8" , "card7" , "card10", "card6", "card9", "card4", "card5", "card2", "card3", "card1"]
     
     @IBOutlet weak var nameRight: UILabel!
     @IBOutlet weak var nameLeft: UILabel!
@@ -24,6 +27,7 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initLabels()
+        playGame()
     }
 
     func initLabels(){
@@ -36,8 +40,17 @@ class GameViewController: UIViewController {
             }else{
                 //on the left Side
                 nameLeft.text = name
-                nameRight.text = "Phone"            }
+                nameRight.text = "Phone"
+                
+            }
+            scoureRight.text = String(format: "%d", sRight)
+            scoureLeft.text = String(format: "%d", sLeft)
+            
         }
+    }
+    
+    func playGame(){
+        timer.isHidden = false
     }
     
 }
