@@ -11,47 +11,57 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WarGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="main" id="BYZ-38-t0r" customClass="ViewController" customModule="WarGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="P4O-ba-GB5">
-                                <rect key="frame" x="86" y="132" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pencil.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="g5U-PJ-uJF">
-                                <rect key="frame" x="533" y="133" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="center" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="0fG-19-ZQO">
-                                <rect key="frame" x="379" y="42" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="done" textContentType="name"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hii " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOD-wL-nVG">
-                                <rect key="frame" x="319" y="42" width="52" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjE-Lg-CF2">
-                                <rect key="frame" x="377" y="301" width="98" height="35"/>
+                                <rect key="frame" x="367" y="302" width="126" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.22352941179999999" green="0.35686274509999999" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Start Play"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start Play" cornerStyle="large">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemTealColor"/>
-                                    </backgroundConfiguration>
+                                <buttonConfiguration key="configuration" style="tinted" title="Start Play" cornerStyle="large">
+                                    <backgroundConfiguration key="background"/>
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vue-kT-iZV"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ash" translatesAutoresizingMaskIntoConstraints="NO" id="P4O-ba-GB5">
+                                <rect key="frame" x="53" y="35" width="275" height="337"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rocket_team" translatesAutoresizingMaskIntoConstraints="NO" id="g5U-PJ-uJF">
+                                <rect key="frame" x="533" y="35" width="285" height="358"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="center" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="0fG-19-ZQO">
+                                <rect key="frame" x="414" y="173" width="109" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="done" textContentType="name"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOD-wL-nVG">
+                                <rect key="frame" x="319" y="173" width="87" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="COr-K0-p2U">
+                                <rect key="frame" x="295" y="8" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WAR GAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjJ-Ar-fkW">
+                                <rect key="frame" x="360" y="110" width="119" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="28"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.35686274509999999" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -85,43 +95,54 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUY-01-biY" userLabel="scoureLeft">
-                                <rect key="frame" x="199" y="48" width="101" height="21"/>
+                                <rect key="frame" x="233" y="48" width="60" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoA-fd-viC" userLabel="scoureRight">
+                                <rect key="frame" x="605" y="47" width="68" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tr5-dn-0yj" userLabel="nameLeft">
-                                <rect key="frame" x="79" y="48" width="112" height="21"/>
+                                <rect key="frame" x="105" y="48" width="112" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5m-c1-cUp" userLabel="nameRight">
-                                <rect key="frame" x="688" y="47" width="127" height="21"/>
+                                <rect key="frame" x="660" y="47" width="127" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="vKY-oP-W4K">
+                                <rect key="frame" x="317" y="13" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WAR GAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWU-0b-gsi">
+                                <rect key="frame" x="386" y="115" width="119" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="28"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.35686274509999999" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URB-UZ-NeI" userLabel="Timer">
-                                <rect key="frame" x="422" y="186" width="44" height="21"/>
+                                <rect key="frame" x="407" y="180" width="60" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoA-fd-viC" userLabel="scoureRight">
-                                <rect key="frame" x="595" y="47" width="105" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fpH-4h-VwN"/>
-                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="imageLeftt" destination="zwN-sD-Sbe" id="FEe-T6-EvE"/>
@@ -137,19 +158,87 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="956.48854961832058"/>
         </scene>
+        <!--Finish View Controller-->
+        <scene sceneID="PXx-Op-Ht9">
+            <objects>
+                <viewController storyboardIdentifier="finishGame" id="cmO-qW-F8w" customClass="FinishViewController" customModule="WarGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RZB-0E-HeO">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="finish_background" translatesAutoresizingMaskIntoConstraints="NO" id="2qZ-yV-pEt">
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Winner Is" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrb-z2-EFg">
+                                <rect key="frame" x="99" y="60" width="654" height="44.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of the winner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZS-tF-W3d">
+                                <rect key="frame" x="99" y="124.33333333333331" width="654" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjG-rG-VSK">
+                                <rect key="frame" x="99" y="169.33333333333334" width="654" height="22.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFP-nM-Elt">
+                                <rect key="frame" x="309" y="291.66666666666669" width="234" height="42.666666666666686"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Back To Menu">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.22352941179999999" green="0.35686274509999999" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backToMenu:" destination="cmO-qW-F8w" eventType="touchUpInside" id="hKf-3Y-qHy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xxb-XF-PlQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gZS-tF-W3d" firstAttribute="leading" secondItem="xxb-XF-PlQ" secondAttribute="leading" constant="40" id="4XM-Sa-e6L"/>
+                            <constraint firstItem="xxb-XF-PlQ" firstAttribute="trailing" secondItem="gZS-tF-W3d" secondAttribute="trailing" constant="40" id="5cq-Gr-K0r"/>
+                            <constraint firstItem="FFP-nM-Elt" firstAttribute="top" secondItem="tjG-rG-VSK" secondAttribute="bottom" constant="100" id="6iM-XD-FmH"/>
+                            <constraint firstItem="gZS-tF-W3d" firstAttribute="top" secondItem="rrb-z2-EFg" secondAttribute="bottom" constant="20" id="BqP-N9-HJq"/>
+                            <constraint firstItem="FFP-nM-Elt" firstAttribute="leading" secondItem="xxb-XF-PlQ" secondAttribute="leading" constant="250" id="EmM-4S-oyI"/>
+                            <constraint firstItem="rrb-z2-EFg" firstAttribute="top" secondItem="xxb-XF-PlQ" secondAttribute="top" constant="60" id="IQx-pp-DQp"/>
+                            <constraint firstItem="xxb-XF-PlQ" firstAttribute="trailing" secondItem="tjG-rG-VSK" secondAttribute="trailing" constant="40" id="OcD-jf-GeY"/>
+                            <constraint firstItem="tjG-rG-VSK" firstAttribute="leading" secondItem="xxb-XF-PlQ" secondAttribute="leading" constant="40" id="VTy-xS-xZp"/>
+                            <constraint firstItem="xxb-XF-PlQ" firstAttribute="trailing" secondItem="rrb-z2-EFg" secondAttribute="trailing" constant="40" id="aSH-CL-vKe"/>
+                            <constraint firstItem="xxb-XF-PlQ" firstAttribute="trailing" secondItem="FFP-nM-Elt" secondAttribute="trailing" constant="250" id="ac9-PH-Z3s"/>
+                            <constraint firstItem="rrb-z2-EFg" firstAttribute="leading" secondItem="xxb-XF-PlQ" secondAttribute="leading" constant="40" id="p6x-2L-RIy"/>
+                            <constraint firstItem="tjG-rG-VSK" firstAttribute="top" secondItem="gZS-tF-W3d" secondAttribute="bottom" constant="15" id="yvW-Oj-ZUd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="menuButton" destination="FFP-nM-Elt" id="1pX-s6-FdD"/>
+                        <outlet property="winnerName" destination="gZS-tF-W3d" id="VBb-uH-94f"/>
+                        <outlet property="winnerScore" destination="tjG-rG-VSK" id="adk-6C-dqO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EZ7-Bj-Yre" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1.4084507042253522" y="1696.9465648854962"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="ash" width="182" height="277"/>
         <image name="card_back" width="759" height="1053"/>
-        <image name="pencil" catalog="system" width="128" height="113"/>
-        <image name="pencil.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="finish_background" width="350" height="197"/>
+        <image name="logo" width="2560" height="942"/>
+        <image name="rocket_team" width="2566" height="2335"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

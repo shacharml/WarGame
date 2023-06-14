@@ -32,7 +32,7 @@ class ViewController: UIViewController ,CLLocationManagerDelegate{
         locationManager = CLLocationManager()
         getCurrentLocation()
         //handel text fild
-        //enterName.becomeFirstResponder()
+        enterName.becomeFirstResponder()
         enterName.delegate = self
     }
     
@@ -52,7 +52,6 @@ class ViewController: UIViewController ,CLLocationManagerDelegate{
             //get longutide
          let currentLog = userLocation.coordinate.longitude
             isLocation = true
-        
              
             groupDecide(curLog: currentLog)
         }
@@ -90,7 +89,6 @@ class ViewController: UIViewController ,CLLocationManagerDelegate{
                     nextScreen.name = textName
                     nextScreen.isRight = self.isRight
                     present( nextScreen, animated: true , completion: nil)
-                    
                     
                 }
             }

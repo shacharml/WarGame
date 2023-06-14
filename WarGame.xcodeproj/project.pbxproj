@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CDB6FD842A39C899001BD728 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB6FD832A39C899001BD728 /* GameViewController.swift */; };
+		CDB6FD862A39EFED001BD728 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB6FD852A39EFED001BD728 /* FinishViewController.swift */; };
 		CDBE21A32A38521A00352CB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBE21A22A38521A00352CB4 /* AppDelegate.swift */; };
 		CDBE21A52A38521A00352CB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBE21A42A38521A00352CB4 /* SceneDelegate.swift */; };
 		CDBE21A72A38521A00352CB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBE21A62A38521A00352CB4 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		CDB6FD832A39C899001BD728 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		CDB6FD852A39EFED001BD728 /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
 		CDBE219F2A38521A00352CB4 /* WarGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDBE21A22A38521A00352CB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDBE21A42A38521A00352CB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				CDBE21AD2A38521B00352CB4 /* LaunchScreen.storyboard */,
 				CDBE21B02A38521B00352CB4 /* Info.plist */,
 				CDB6FD832A39C899001BD728 /* GameViewController.swift */,
+				CDB6FD852A39EFED001BD728 /* FinishViewController.swift */,
 			);
 			path = WarGame;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDB6FD862A39EFED001BD728 /* FinishViewController.swift in Sources */,
 				CDB6FD842A39C899001BD728 /* GameViewController.swift in Sources */,
 				CDBE21A72A38521A00352CB4 /* ViewController.swift in Sources */,
 				CDBE21A32A38521A00352CB4 /* AppDelegate.swift in Sources */,
